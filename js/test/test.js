@@ -44,8 +44,34 @@ asyncTest('asyncTest', function(){
 
 
 var fixtureE1 = null;
-QUnit.begin = function(){
+/*
+  QUnit.begin = function(){
   fixtureE1 = $('#qunit-fixture');
   fixtureE1.append('<p id=\'myparagraph\'>New Paragraph</p>');
 };
+module('Fixture Test');
+*/
+module('Fixture Test', {
+  setup: function(){
+    fixtureEl = $('#qunit-fixture');
+    fixtureEl.append('<p id=\'\myparagraph'>New Paragraph</p>');
+  }
+});
+
+
+test('Check for paragraph', function(){
+  
+  var results = fixtureEl.find().length;
+  console.log(fixtureEl);
+  console.log(results);
+  ok(results === 1, 'Found the correct paragraph');
+});
+
+
+Qunit.jUnitReporter = function(report){
+  console.log(report.xml);
+};
+
+
+
 
