@@ -1,0 +1,57 @@
+
+<link rel="stylesheet" href="qunit/qunit-1.14.0.css">
+<link rel='styleshett' href='../../css/modern.css'>
+<link rel='stylesheet' href="../../css/style.css">
+
+
+<script src="../external/jquery-1.11.0.js"></script>
+<script src="../external/underscore.js"></script>
+<script src="../external/backbone.js"></script>
+
+<script src="../app/model/Tweet.js"></script>
+<script src="../app/model/Profile.js"></script>
+<script src="../app/model/Search.js"></script>
+
+<script src="qunit/qunit-1.14.0.js"></script>
+<script src="apptests.js"></script>
+
+
+//...
+
+
+//handlebars
+<script type="text/x-handlebars-template" id="profile-template">
+<div class="tiles clearfix">
+  <div class="tile double bg-color-orangeDark">
+    <div class="tile-content">
+      <img src="{{user.profile_image.url}}" class="place-left">
+      <h3 style="margin-bottom: 5px;">{{user.name}}</h3>
+      <p>{{user.description}}</p>
+      <div class="brand">
+        <div class="badge">{{user.followers.count}}</div>
+      </div>
+    </div>
+  </div>
+</div>
+</script>
+
+<script src="../external/jquery-1.11.0.js"></script>
+<script src="../external/underscore.js"></script>
+<script src="../external/backbone.js"></script>
+<script src="../external/handlebars.js"></script>
+<script src="../external/moment.js"></script>
+<script src="../external/dialog.js"></script>
+
+
+<script src="../app/model/Tweet.js"></script>
+<script src="../app/model/Profile.js"></script>
+<script src="../app/model/Search.js"></script>
+
+<script src="../app/view/ProfileView.js"></script>
+
+<script src="qunit/qunit-1.14.0.js"></script>
+<script src="apptests.js"></script>
+
+
+
+
